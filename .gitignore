@@ -6,3 +6,4 @@ react/.react-router/
 react/build/
 
 .env
+.env.local
