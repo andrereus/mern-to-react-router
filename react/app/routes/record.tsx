@@ -27,7 +27,7 @@ export default function Record() {
       const record = await response.json();
       if (!record) {
         console.warn(`Record with id ${id} not found`);
-        navigate("/");
+        navigate("/employees");
         return;
       }
       setForm(record);
@@ -76,7 +76,7 @@ export default function Record() {
       console.error("A problem occurred with your fetch operation: ", error);
     } finally {
       setForm({ name: "", position: "", level: "" });
-      navigate("/");
+      navigate("/employees");
     }
   }
 
